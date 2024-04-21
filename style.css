@@ -1,0 +1,162 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(10, 177, 10);
+    background-color: white; 
+}
+
+
+header {
+    background-color: rgb(123, 123, 252);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 3;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(121, 255, 121);
+}
+
+a.history {
+    color: rgb(121, 255, 121);
+    margin-right: 20px;
+}
+
+.message {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.message h1 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+
+.message p {
+    font-size: 18px;
+}
+
+.earth {
+    width: 400px;
+    height: 400px; 
+    background: radial-gradient(#2E8B57 30%, #4682B4 70%, #0000FF 90%); 
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+canvas {
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fact-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fact-content {
+    text-align: center;
+}
+
+.fact-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fact-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+.popup-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color: rgb(10, 177, 10);
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #27bd09;
+    margin-top: 0;
+}
+
+p {
+    color: rgb(10, 177, 10);
+}
+
+
+@keyframes atmosphereAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+.atmosphere {
+    animation: atmosphereAnimation 2s ease-in-out infinite;
+}
+
+footer{
+margin-bottom: 50px;
+margin-top: 20px;
+}
+
+a.footer{
+    color: rgb(23, 221, 23); 
+}
